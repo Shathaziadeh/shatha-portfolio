@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shatha Ziadeh - Web Designer</title>
-  <meta name="description" content="Portfolio - Junior Web Designer (HTML, CSS, JavaScript, Responsive Design)." />
-  <meta property="og:image" content="assets/featured-thumbnail.png">
+  <title>Shatha Ziadeh — Web Designer</title>
+  <meta name="description" content="Portfolio — Junior Web Designer (HTML, CSS, JavaScript, Responsive Design). Remote-friendly." />
+  <meta property="og:image" content="assets/featured-thumbnail.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <div class="brand">Shatha<span>Ziadeh</span></div>
-      <nav>
+      <nav class="nav" id="nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
     </div>
   </header>
 
@@ -25,33 +26,35 @@
     <div class="container hero-grid">
       <img src="assets/profile.jpg" alt="Profile photo" class="avatar" />
       <div>
-        <h1>Hi, I'm <span>Shatha</span></h1>
-        <p class="role">Junior Web Designer</p>
+        <h1>Hi, I'm Shatha</h1>
+        <p class="subtitle">Junior Web Designer</p>
         <p class="lead">
-          Recent graduate in Computer Information Technology (Web Design) from Delgado Community College.
-          I build clean, responsive websites using HTML, CSS, and basic JavaScript.
+          Recent graduate in Computer Information Technology (Web Design) from Delgado Community College.  
+          I build clean, accessible, responsive websites using HTML, CSS, and basic JavaScript.
         </p>
         <div class="cta">
-          <a class="btn primary" href="#projects">See Projects</a>
-          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section alt">
     <div class="container">
       <h2>About</h2>
-      <p>I’m passionate about accessible, mobile-first web design and continuously improving my skills.</p>
-      <ul class="about-list">
-        <li>Location: Harvey, Louisiana, USA</li>
-        <li>Education: Delgado Community College — Web Design</li>
-        <li>Open to: Remote junior roles</li>
+      <p>
+        I’m passionate about accessible, mobile-first web design and continuously improving my skills.
+      </p>
+      <ul class="bullets">
+        <li><strong>Location:</strong> Harvey, Louisiana, USA</li>
+        <li><strong>Education:</strong> Delgado Community College — Web Design</li>
+        <li><strong>Open to:</strong> Remote junior roles</li>
       </ul>
     </div>
   </section>
 
-  <section id="skills" class="section alt">
+  <section id="skills" class="section">
     <div class="container">
       <h2>Skills</h2>
       <div class="chips">
@@ -66,24 +69,29 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="cards">
+
         <article class="card">
           <h3>Portfolio Website</h3>
           <p>Responsive personal site with hero, projects, and contact.</p>
           <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <a class="btn small" href="#" aria-disabled="true">Live (coming soon)</a>
+         
+          <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/portfolio-website/" target="_blank" rel="noopener">Live</a>
         </article>
+
         <article class="card">
           <h3>Cafe Landing Page</h3>
           <p>Mobile-first promo page for a cafe with menu preview and CTA.</p>
           <ul class="stack"><li>HTML</li><li>CSS</li></ul>
-          <a class="btn small" href="#" aria-disabled="true">Live (coming soon)</a>
+          <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/cafe-landing/" target="_blank" rel="noopener">Live</a>
         </article>
+
         <article class="card">
           <h3>Product Showcase</h3>
           <p>Simple product grid with filtering and a detail modal.</p>
           <ul class="stack"><li>HTML</li><li>CSS</li><li>JS</li></ul>
-          <a class="btn small" href="#" aria-disabled="true">Live (coming soon)</a>
+          <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/product-showcase/" target="_blank" rel="noopener">Live</a>
         </article>
+
       </div>
     </div>
   </section>
@@ -93,8 +101,8 @@
       <h2>Contact</h2>
       <ul class="contact">
         <li>Email: <a href="mailto:Shathaziadeh23@gmail.com">Shathaziadeh23@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/Shathaziadeh" target="_blank">Shathaziadeh</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/shathaziadeh" target="_blank">linkedin.com/in/shathaziadeh</a></li>
+        <li>GitHub: <a href="https://github.com/Shathaziadeh" target="_blank" rel="noopener">Shathaziadeh</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/shathaziadeh" target="_blank" rel="noopener">in/shathaziadeh</a></li>
       </ul>
     </div>
   </section>
@@ -102,6 +110,7 @@
   <footer class="site-footer">
     <div class="container">© 2025 Shatha Ziadeh — Built with HTML & CSS</div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
