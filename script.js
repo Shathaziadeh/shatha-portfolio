@@ -1,28 +1,24 @@
-// Smooth scroll for in-page links
+// year in footer
+document.getElementById('y').textContent = new Date().getFullYear();
+
+// smooth scroll for same-page links
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click', e=>{
     const id = a.getAttribute('href');
-    if(id === '#' || id.length < 2) return;
     const el = document.querySelector(id);
     if(!el) return;
     e.preventDefault();
     el.scrollIntoView({behavior:'smooth', block:'start'});
-    // close mobile menu after click
-    nav.classList.remove('open');
+    // close mobile nav after click
+    nav.classList.remove('show');
     toggle.setAttribute('aria-expanded','false');
   });
 });
 
-// Mobile nav toggle
+// mobile nav toggle
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav');
-if(toggle){
-  toggle.addEventListener('click', ()=>{
-    const isOpen = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(isOpen));
-  });
-}
-
-// Current year in footer
-const y = document.getElementById('y');
-if(y) y.textContent = new Date().getFullYear();
+toggle.addEventListener('click', ()=>{
+  const open = nav.classList.toggle('show');
+  toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
