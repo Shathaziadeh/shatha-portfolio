@@ -98,3 +98,42 @@ p{margin:.2rem 0 1rem}
   .nav.show{display:flex}
   .nav-toggle{display:inline-block}
 }
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #0d1117;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.contact-buttons .btn {
+  padding: 12px 25px;
+  background: #238636;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.contact-buttons .btn:hover {
+  background: #2ea043;
+}
