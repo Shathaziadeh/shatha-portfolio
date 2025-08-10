@@ -18,48 +18,46 @@ const mClose = document.getElementById('m-close');
 let currentTag = 'all';
 let query = '';
 
-function render() {
+function render(){
   grid.innerHTML = '';
   const q = query.trim().toLowerCase();
   data
-    .filter(p => (currentTag === 'all' || p.tag === currentTag))
+    .filter(p => currentTag === 'all' || p.tag === currentTag)
     .filter(p => !q || p.title.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q))
-    .forEach(p => {
-      const card = document.createElement('article');
-      card.className = 'card';
-      card.innerHTML = `
+    .forEach(p=>{
+      const el = document.createElement('article');
+      el.className = 'card';
+      el.innerHTML = `
         <h3>${p.title}</h3>
         <span class="tag">${p.tag}</span>
         <p>${p.desc}</p>
         <button class="btn" data-id="${p.id}">Details</button>
       `;
-      grid.appendChild(card);
+      grid.appendChild(el);
     });
 }
 
-chips.forEach(c => c.addEventListener('click', () => {
-  chips.forEach(x => x.classList.remove('active'));
+chips.forEach(c=>c.addEventListener('click', ()=>{
+  chips.forEach(x=>x.classList.remove('active'));
   c.classList.add('active');
   currentTag = c.dataset.tag;
   render();
 }));
 
-search.addEventListener('input', (e) => {
+search.addEventListener('input', e=>{
   query = e.target.value;
   render();
 });
 
-grid.addEventListener('click', (e) => {
+grid.addEventListener('click', e=>{
   const btn = e.target.closest('button[data-id]');
-  if (!btn) return;
-  const item = data.find(d => d.id === Number(btn.dataset.id));
-  if (!item) return;
+  if(!btn) return;
+  const item = data.find(d=>d.id === Number(btn.dataset.id));
+  if(!item) return;
   mTitle.textContent = item.title;
-  mDesc.textContent = item.desc;
+  mDesc.textContent  = item.desc;
   modal.showModal();
 });
+mClose.addEventListener('click', ()=>modal.close());
 
-mClose.addEventListener('click', () => modal.close());
-
-// initial render
 render();
