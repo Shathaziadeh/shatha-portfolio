@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Showcase - Demo</title>
+  <meta name="description" content="Simple product grid with search/filter and a detail modal.">
+  <meta property="og:image" content="assets/thumbnail.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Product <span>Showcase</span></div>
+      <input id="search" class="search" placeholder="Search products..." />
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters">
+        <button class="chip active" data-cat="all">All</button>
+        <button class="chip" data-cat="accessories">Accessories</button>
+        <button class="chip" data-cat="apparel">Apparel</button>
+        <button class="chip" data-cat="home">Home</button>
+      </div>
+      <div id="grid" class="grid"></div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-content">
+      <button id="close" class="close">×</button>
+      <img id="mimg" alt="" />
+      <div class="mtext">
+        <h3 id="mtitle"></h3>
+        <p id="mdesc"></p>
+        <div id="mprice" class="price"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">Demo by Shatha Ziadeh • <a href="https://github.com/Shathaziadeh">GitHub</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
