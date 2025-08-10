@@ -3,45 +3,41 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Product Showcase - Demo</title>
-  <meta name="description" content="Simple product grid with search/filter and a detail modal.">
-  <meta property="og:image" content="assets/thumbnail.png">
+  <title>Product Showcase — Demo</title>
+  <meta name="description" content="Simple product grid with search & filter." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="nav">
     <div class="container">
-      <div class="brand">Product <span>Showcase</span></div>
-      <input id="search" class="search" placeholder="Search products..." />
+      <h1>Product Showcase</h1>
+      <input id="search" type="search" placeholder="Search products…" />
     </div>
   </header>
 
-  <section class="section">
-    <div class="container">
-      <div class="filters">
-        <button class="chip active" data-cat="all">All</button>
-        <button class="chip" data-cat="accessories">Accessories</button>
-        <button class="chip" data-cat="apparel">Apparel</button>
-        <button class="chip" data-cat="home">Home</button>
-      </div>
-      <div id="grid" class="grid"></div>
+  <main class="container">
+    <div class="filters">
+      <button class="chip active" data-tag="all">All</button>
+      <button class="chip" data-tag="accessory">Accessory</button>
+      <button class="chip" data-tag="home">Home</button>
+      <button class="chip" data-tag="tech">Tech</button>
     </div>
-  </section>
 
-  <div id="modal" class="modal" hidden>
+    <section id="grid" class="grid">
+      <!-- Cards injected by JS -->
+    </section>
+  </main>
+
+  <dialog id="modal">
     <div class="modal-content">
-      <button id="close" class="close">×</button>
-      <img id="mimg" alt="" />
-      <div class="mtext">
-        <h3 id="mtitle"></h3>
-        <p id="mdesc"></p>
-        <div id="mprice" class="price"></div>
-      </div>
+      <h3 id="m-title"></h3>
+      <p id="m-desc"></p>
+      <button id="m-close" class="btn">Close</button>
     </div>
-  </div>
+  </dialog>
 
   <footer class="site-footer">
-    <div class="container">Demo by Shatha Ziadeh • <a href="https://github.com/Shathaziadeh">GitHub</a></div>
+    <div class="container">© 2025 Demo</div>
   </footer>
 
   <script src="script.js"></script>
