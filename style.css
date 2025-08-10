@@ -38,6 +38,7 @@ p{margin:.3rem 0 1rem}
 .nav a{color:var(--muted); text-decoration:none; font-weight:500}
 .nav a:hover{color:var(--text)}
 
+/* ===== Hero (بدون صورة كبيرة) ===== */
 .hero{padding:60px 0 24px}
 .hero-grid{display:grid;grid-template-columns:1fr;gap:28px}
 .eyebrow{letter-spacing:.14em;font-size:.8rem;color:var(--ok);text-transform:uppercase}
@@ -95,5 +96,3 @@ p{margin:.3rem 0 1rem}
 
 /* ===== Footer ===== */
 .site-footer{border-top:1px solid var(--line); padding:26px 0; color:#b9cbf1; text-align:center}
-
-
