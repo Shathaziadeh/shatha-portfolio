@@ -1,116 +1,152 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Shatha Ziadeh — Web Designer</title>
-  <meta name="description" content="Junior Web Designer portfolio: HTML, CSS, basic JS. Remote-friendly."/>
-  <meta property="og:title" content="Shatha Ziadeh — Web Designer"/>
-  <meta property="og:description" content="Portfolio, skills, and projects."/>
-  <meta property="og:image" content="assets/featured-thumbnail.png"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crystal Clean — Professional Cleaning</title>
+  <meta name="description" content="Fast, reliable home & office cleaning. Eco-friendly supplies. Free quote." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container">
-    <div class="brand">Shatha<span>Ziadeh</span></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
 
-<section class="hero">
-  <div class="container hero-grid">
-    <img src="assets/profile.jpg" alt="Profile photo" class="avatar"/>
-    <div>
-      <h1>Hi, I'm <span>Shatha</span></h1>
-      <p class="subtitle">Junior Web Designer</p>
-      <p class="lede">
-        Recent graduate in Computer Information Technology (Web Design). I build clean,
-        responsive websites with HTML, CSS and basic JavaScript.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#projects">See Projects</a>
-        <a class="btn" href="#contact">Contact</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="../">Crystal<span>Clean</span></a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Spotless Cleaning, On Your Schedule</h1>
+        <p>Home & Office • Eco-friendly • Trusted & Insured</p>
+        <div class="cta-row">
+          <a class="btn primary" href="tel:+15044505293">Call to book</a>
+          <a class="btn ghost" href="#contact">Get a free quote</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <!-- نستخدم صورة من مجلد الأصول في الجذر -->
+        <img src="../assets/hero_modern.jpg" alt="Fresh, bright interior" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Home Cleaning</h3>
+          <p>Kitchens, bathrooms, bedrooms, living areas. One-time or recurring.</p>
+        </article>
+        <article class="card">
+          <h3>Office Cleaning</h3>
+          <p>Desks, floors, meeting rooms, pantries. After-hours available.</p>
+        </article>
+        <article class="card">
+          <h3>Deep Cleaning</h3>
+          <p>Inside ovens/fridges, baseboards, blinds, grout, hard-to-reach spots.</p>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>About</h2>
-    <p>
-      I’m passionate about accessible, mobile-first web design and continuously improving my skills.
-    </p>
-    <ul class="bullets">
-      <li><strong>Location:</strong> Harvey, Louisiana, USA</li>
-      <li><strong>Education:</strong> Delgado Community College — Web Design</li>
-      <li><strong>Open to:</strong> Remote junior roles</li>
-    </ul>
-  </div>
-</section>
-
-<section id="skills" class="section alt">
-  <div class="container">
-    <h2>Skills</h2>
-    <div class="chips">
-      <span>HTML5</span><span>CSS3 (Flexbox & Grid)</span><span>JavaScript (DOM)</span>
-      <span>Responsive Design</span><span>Git & GitHub</span><span>WordPress</span>
-      <span>Figma</span><span>Photoshop</span><span>Illustrator</span>
+  <!-- Pricing -->
+  <section id="pricing" class="section alt">
+    <div class="wrap">
+      <h2>Simple Pricing</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Basic</h3>
+          <p class="price">$79</p>
+          <ul>
+            <li>Kitchen & bath surfaces</li>
+            <li>Floors vacuum & mop</li>
+            <li>Dusting</li>
+          </ul>
+          <a class="btn primary" href="tel:+15044505293">Book</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Standard</h3>
+          <p class="price">$129</p>
+          <ul>
+            <li>Everything in Basic</li>
+            <li>Bedrooms & living areas</li>
+            <li>Trash removal</li>
+          </ul>
+          <a class="btn primary" href="tel:+15044505293">Book</a>
+        </div>
+        <div class="price-card">
+          <h3>Deep Clean</h3>
+          <p class="price">$199</p>
+          <ul>
+            <li>Everything in Standard</li>
+            <li>Inside oven/fridge</li>
+            <li>Detail work & extras</li>
+          </ul>
+          <a class="btn primary" href="tel:+15044505293">Book</a>
+        </div>
+      </div>
+      <p class="note">* Prices are starting points and may vary by size/condition. Free quotes available.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="projects" class="section">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="cards">
-
-      <article class="card">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal site with hero, projects, and contact.</p>
-        <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/" target="_blank" rel="noopener">Live</a>
-      </article>
-
-      <article class="card">
-        <h3>Cafe Landing Page</h3>
-        <p>Mobile-first promo page for a cafe with a menu preview and CTA.</p>
-        <ul class="stack"><li>HTML</li><li>CSS</li></ul>
-        <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/cafe-landing/" target="_blank" rel="noopener">Live</a>
-      </article>
-
-      <article class="card">
-        <h3>Product Showcase</h3>
-        <p>Simple product grid with search, filter, and a detail modal.</p>
-        <ul class="stack"><li>HTML</li><li>CSS</li><li>JS</li></ul>
-        <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/product-showcase/" target="_blank" rel="noopener">Live</a>
-      </article>
-
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="wrap two-col">
+      <div>
+        <h2>Get a Free Quote</h2>
+        <p>Tell us about your space and preferred schedule. We’ll reply quickly.</p>
+        <ul class="contact-list">
+          <li>📧 <a href="mailto:Shathaziadeh23@gmail.com">Shathaziadeh23@gmail.com</a></li>
+          <li>📱 <a href="tel:+15044505293">+1 (504) 450-5293</a></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="tel:+15044505293">Call now</a>
+          <a class="btn ghost" href="mailto:Shathaziadeh23@gmail.com">Email</a>
+        </div>
+      </div>
+      <form class="quote" onsubmit="event.preventDefault(); alert('Thanks! We will get back to you shortly.');">
+        <label>
+          Name
+          <input required type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input required type="email" placeholder="you@email.com" />
+        </label>
+        <label>
+          Service
+          <select>
+            <option>Home Cleaning</option>
+            <option>Office Cleaning</option>
+            <option>Deep Cleaning</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea rows="4" placeholder="Tell us about your space..."></textarea>
+        </label>
+        <button class="btn primary" type="submit">Request quote</button>
+      </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="section alt">
-  <div class="container">
-    <h2>Contact</h2>
-    <ul class="contact">
-      <li>Email: <a href="mailto:Shathaziadeh23@gmail.com">Shathaziadeh23@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/Shathaziadeh" target="_blank">Shathaziadeh</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/shathaziadeh" target="_blank">linkedin.com/in/shathaziadeh</a></li>
-    </ul>
-  </div>
-</section>
+  <footer class="footer">
+    <div class="wrap">© <span id="y"></span> Crystal Clean</div>
+  </footer>
 
-<footer class="site-footer">
-  <div class="container">© 2025 Shatha Ziadeh — Built with HTML & CSS</div>
-</footer>
-
-<script src="script.js"></script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
