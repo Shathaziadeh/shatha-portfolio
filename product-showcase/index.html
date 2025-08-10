@@ -1,45 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Product Showcase — Demo</title>
-  <meta name="description" content="Simple product grid with search & filter." />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Simple product grid with search, filter, and details modal."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="nav">
-    <div class="container">
-      <h1>Product Showcase</h1>
-      <input id="search" type="search" placeholder="Search products…" />
-    </div>
-  </header>
+<header class="nav">
+  <div class="container">
+    <h1>Product Showcase</h1>
+    <input id="search" type="search" placeholder="Search products…"/>
+  </div>
+</header>
 
-  <main class="container">
-    <div class="filters">
-      <button class="chip active" data-tag="all">All</button>
-      <button class="chip" data-tag="accessory">Accessory</button>
-      <button class="chip" data-tag="home">Home</button>
-      <button class="chip" data-tag="tech">Tech</button>
-    </div>
+<main class="container">
+  <div class="filters">
+    <button class="chip active" data-tag="all">All</button>
+    <button class="chip" data-tag="accessory">Accessory</button>
+    <button class="chip" data-tag="home">Home</button>
+    <button class="chip" data-tag="tech">Tech</button>
+  </div>
 
-    <section id="grid" class="grid">
-      <!-- Cards injected by JS -->
-    </section>
-  </main>
+  <section id="grid" class="grid"><!-- Cards injected by JS --></section>
+</main>
 
-  <dialog id="modal">
-    <div class="modal-content">
-      <h3 id="m-title"></h3>
-      <p id="m-desc"></p>
-      <button id="m-close" class="btn">Close</button>
-    </div>
-  </dialog>
+<dialog id="modal">
+  <div class="modal-content">
+    <h3 id="m-title"></h3>
+    <p id="m-desc"></p>
+    <button id="m-close" class="btn">Close</button>
+  </div>
+</dialog>
 
-  <footer class="site-footer">
-    <div class="container">© 2025 Demo</div>
-  </footer>
+<footer class="site-footer">
+  <div class="container">© 2025 Demo</div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
