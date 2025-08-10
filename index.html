@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shatha Ziadeh — Web Designer</title>
   <meta name="description" content="Portfolio of Shatha Ziadeh — Junior Web Designer. HTML, CSS, basic JS. Remote-ready." />
-  <meta property="og:image" content="assets/hero_modern.jpg" />
-
+  <meta property="og:image" content="assets/portfolio-thumbnail.jpg" />
   <link rel="preload" as="image" href="assets/hero_modern.jpg">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Go to top">
+      <a class="brand" href="#top">
         <span class="brand-dot" aria-hidden="true"></span>
         Shatha<span>Ziadeh</span>
       </a>
@@ -50,7 +50,8 @@
       </div>
 
       <figure class="hero-media">
-        <img src="assets/hero_modern.jpg" alt="Abstract clean shapes background" />
+        <!-- الصورة الأساسية -->
+        <img src="assets/hero_modern.jpg?v=2" alt="Abstract clean shapes" />
       </figure>
     </div>
   </section>
@@ -61,17 +62,17 @@
       <div>
         <h2>About</h2>
         <p>
-          I’m passionate about accessible, mobile-first web design and continuously
-          improving my skills. Based in <strong>Harvey, Louisiana</strong>, open to
-          <strong>remote junior roles</strong>.
+          I’m passionate about accessible, mobile-first web design and continuously improving my skills.
+          Based in <strong>Harvey, Louisiana</strong>, open to <strong>remote junior roles</strong>.
         </p>
         <ul class="bullets">
           <li><strong>Education:</strong> Delgado Community College — Web Design</li>
-          <li><strong>Focus:</strong> Semantic HTML, modern CSS (Flexbox & Grid), simple JS interactions</li>
+          <li><strong>Focus:</strong> Semantic HTML, modern CSS (Flexbox &amp; Grid), simple JS interactions</li>
         </ul>
       </div>
       <figure>
-        <img class="portrait" src="assets/profile.jpg" alt="Shatha Ziadeh profile photo" />
+        <!-- صورة البورتريت -->
+        <img src="assets/profile.jpg?v=2" alt="Shatha Ziadeh profile photo" class="rounded" />
       </figure>
     </div>
   </section>
@@ -81,8 +82,8 @@
     <div class="container">
       <h2>Skills</h2>
       <div class="chips">
-        <span>HTML5</span><span>CSS3 (Flexbox & Grid)</span><span>Responsive Design</span>
-        <span>JavaScript (DOM)</span><span>Git & GitHub</span><span>WordPress</span>
+        <span>HTML5</span><span>CSS3 (Flexbox &amp; Grid)</span><span>Responsive Design</span>
+        <span>JavaScript (DOM)</span><span>Git &amp; GitHub</span><span>WordPress</span>
         <span>Figma (basics)</span><span>Photoshop</span><span>Illustrator</span>
       </div>
     </div>
@@ -94,9 +95,9 @@
       <h2>Projects</h2>
 
       <div class="cards">
-        <!-- Portfolio -->
+        <!-- 1) Portfolio Website -->
         <article class="card">
-          <img src="assets/portfolio-thumbnail.jpg" alt="Portfolio Website thumbnail" loading="lazy" />
+          <img src="assets/portfolio-thumbnail.jpg?v=2" alt="Portfolio Website thumbnail" loading="lazy" />
           <div class="card-body">
             <h3>Portfolio Website</h3>
             <p>Responsive personal site with hero, projects, and contact.</p>
@@ -108,9 +109,9 @@
           </div>
         </article>
 
-        <!-- Cafe Landing -->
+        <!-- 2) Cafe Landing Page -->
         <article class="card">
-          <img src="assets/cafe-thumbnail.png" alt="Cafe Landing Page thumbnail" loading="lazy" />
+          <img src="assets/cafe-thumbnail.png?v=2" alt="Cafe Landing Page thumbnail" loading="lazy" />
           <div class="card-body">
             <h3>Cafe Landing Page</h3>
             <p>Mobile-first promo page for a cafe with menu preview and CTA.</p>
@@ -122,9 +123,9 @@
           </div>
         </article>
 
-        <!-- Product Showcase -->
+        <!-- 3) Product Showcase -->
         <article class="card">
-          <img src="assets/product-thumbnail.jpg" alt="Product Showcase thumbnail" loading="lazy" />
+          <img src="assets/product-thumbnail.jpg?v=2" alt="Product Showcase thumbnail" loading="lazy" />
           <div class="card-body">
             <h3>Product Showcase</h3>
             <p>Simple product grid with filtering and a detail modal.</p>
@@ -136,9 +137,9 @@
           </div>
         </article>
 
-        <!-- Cleaning Landing (crystal_clean_modern) -->
+        <!-- 4) Cleaning Service Landing -->
         <article class="card">
-          <img src="assets/office_modern.jpg" alt="Cleaning Service Landing thumbnail" loading="lazy" />
+          <img src="assets/office_modern.jpg?v=2" alt="Cleaning Service Landing thumbnail" loading="lazy" />
           <div class="card-body">
             <h3>Cleaning Service Landing</h3>
             <p>Modern and clean design with service highlights and contact section.</p>
@@ -167,14 +168,15 @@
         </ul>
       </div>
       <figure>
-        <img src="assets/hero_modern.jpg" alt="Clean abstract shapes" class="rounded" />
+        <!-- صورة ثانية خفيفة في السكشن -->
+        <img src="assets/hero_modern.jpg?v=2" alt="Clean gradient" class="rounded" />
       </figure>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      © <span id="y"></span> Shatha Ziadeh — Built with HTML & CSS
+      © <span id="y"></span> Shatha Ziadeh — Built with HTML &amp; CSS
     </div>
   </footer>
 
