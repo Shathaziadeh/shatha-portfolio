@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafe Azahar - Landing</title>
+  <meta name="description" content="Mobile-first landing page demo.">
+  <meta property="og:image" content="assets/thumbnail.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Cafe <span>Azahar</span></div>
+      <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Fresh coffee. Cozy vibes.</h1>
+        <p class="lead">Hand-brewed coffee, fresh pastries, and a calm corner to read, meet, or work.</p>
+        <a class="btn primary" href="#visit">Reserve a table</a>
+      </div>
+      <div class="card promo">
+        <h3>Today’s Special</h3>
+        <p>Cardamom Latte + Almond Croissant</p>
+        <div class="price">$7.50</div>
+      </div>
+    </div>
+  </section>
+  <section id="menu" class="section">
+    <div class="container">
+      <h2>Menu Highlights</h2>
+      <div class="grid3">
+        <div class="menu-item"><h4>Espresso</h4><p>Rich and bold shot.</p><div class="price">$2.50</div></div>
+        <div class="menu-item"><h4>Latte</h4><p>Silky and smooth milk.</p><div class="price">$4.00</div></div>
+        <div class="menu-item"><h4>Cold Brew</h4><p>Slow-steeped, low-acid.</p><div class="price">$4.50</div></div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section alt">
+    <div class="container"><h2>About</h2><p>Independent cafe demo page coded as a practice project.</p></div>
+  </section>
+  <section id="visit" class="section">
+    <div class="container">
+      <h2>Visit</h2>
+      <form class="reserve" onsubmit="event.preventDefault(); alert('Thanks! We will confirm by email.');">
+        <label>Name<input required type="text" placeholder="Your name"></label>
+        <label>Email<input required type="email" placeholder="name@example.com"></label>
+        <label>Date<input required type="date"></label>
+        <button class="btn primary" type="submit">Request Reservation</button>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer"><div class="container">© 2025 Cafe Azahar — Demo</div></footer>
+</body>
+</html>
