@@ -1,98 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shatha Ziadeh - Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shatha Ziadeh — Web Designer</title>
+  <meta name="description" content="Portfolio of Shatha Ziadeh — Junior Web Designer. HTML, CSS, basic JS. Remote-ready." />
+  <meta property="og:image" content="assets/hero_modern.jpg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <!-- Header -->
-  <header>
-    <nav>
-      <h1 class="logo">Shatha <span>Ziadeh</span></h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-dot" aria-hidden="true"></span>
+        Shatha<span>Ziadeh</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <img src="assets/hero_modern.jpg" alt="Crystal Clean Co.">
-    <div class="hero-text">
-      <h2>Hi, I'm <span>Shatha</span></h2>
-      <p>Recent graduate in Computer Information Technology (Web Design). I build clean, responsive websites with HTML, CSS, and basic JavaScript.</p>
-      <a href="#projects" class="btn">See Projects</a>
-      <a href="#contact" class="btn secondary">Contact</a>
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Junior Web Designer</p>
+        <h1>Hi, I’m <span class="accent">Shatha</span></h1>
+        <p class="lead">
+          Recent graduate in Computer Information Technology (Web Design).
+          I build clean, responsive websites with <strong>HTML</strong>, <strong>CSS</strong>, and
+          basic <strong>JavaScript</strong>.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <figure class="hero-media">
+        <img src="assets/hero_modern.jpg" alt="Clean abstract background" />
+      </figure>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about">
-    <h2>About</h2>
-    <p>I'm passionate about accessible, mobile-first web design and continuously improving my skills. Based in Harvey, Louisiana, open to remote junior roles.</p>
-    <ul>
-      <li><strong>Education:</strong> Delgado Community College — Web Design</li>
-      <li><strong>Focus:</strong> Semantic HTML, modern CSS (Flexbox & Grid), simple JS interactions</li>
-    </ul>
+  <section class="section" id="about">
+    <div class="container two-col">
+      <div>
+        <h2>About</h2>
+        <p>
+          I’m passionate about accessible, mobile-first web design and continuously improving my skills.
+          Based in <strong>Harvey, Louisiana</strong>, open to <strong>remote junior roles</strong>.
+        </p>
+        <ul class="bullets">
+          <li><strong>Education:</strong> Delgado Community College — Web Design</li>
+          <li><strong>Focus:</strong> Semantic HTML, modern CSS (Flexbox & Grid), simple JS interactions</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/featured-thumbnail.png" alt="Minimal workspace" class="rounded" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section alt" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>HTML5</span><span>CSS3 (Flexbox & Grid)</span><span>Responsive Design</span>
+        <span>JavaScript (DOM)</span><span>Git & GitHub</span><span>WordPress</span>
+        <span>Figma (basics)</span><span>Photoshop</span><span>Illustrator</span>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
 
-      <div class="project-card">
-        <img src="assets/portfolio-thumbnail.jpg" alt="Portfolio Website">
-        <h3>Portfolio Website</h3>
-        <p>Responsive personal site with hero, projects, and contact.</p>
-        <span class="tags">HTML • CSS • JS</span>
+        <!-- Portfolio -->
+        <article class="card">
+          <img src="assets/portfolio-thumbnail.jpg" alt="" loading="lazy" />
+          <div class="card-body">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal site with hero, projects, and contact.</p>
+            <ul class="stack"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            <div class="card-actions">
+              <a class="btn small" href="./" target="_blank">Live</a>
+              <a class="btn small ghost" href="https://github.com/Shathaziadeh/shatha-portfolio" target="_blank">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cafe Landing -->
+        <article class="card">
+          <img src="assets/cafe-thumbnail.png" alt="" loading="lazy" />
+          <div class="card-body">
+            <h3>Cafe Landing Page</h3>
+            <p>Mobile-first promo page for a cafe with menu preview and CTA.</p>
+            <ul class="stack"><li>HTML</li><li>CSS</li></ul>
+            <div class="card-actions">
+              <a class="btn small" href="./cafe-landing/" target="_blank">Live</a>
+              <a class="btn small ghost" href="https://github.com/Shathaziadeh/shatha-portfolio/tree/main/cafe-landing" target="_blank">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Showcase -->
+        <article class="card">
+          <img src="assets/product-thumbnail.jpg" alt="" loading="lazy" />
+          <div class="card-body">
+            <h3>Product Showcase</h3>
+            <p>Simple product grid with filtering and a detail modal.</p>
+            <ul class="stack"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            <div class="card-actions">
+              <a class="btn small" href="./product-showcase/" target="_blank">Live</a>
+              <a class="btn small ghost" href="https://github.com/Shathaziadeh/shatha-portfolio/tree/main/product-showcase" target="_blank">Repo</a>
+            </div>
+          </div>
+        </article>
+
       </div>
-
-      <div class="project-card">
-        <img src="assets/cafe-thumbnail.png" alt="Cafe Landing Page">
-        <h3>Cafe Landing Page</h3>
-        <p>Mobile-first promo page for a cafe with menu preview and CTA.</p>
-        <span class="tags">HTML • CSS</span>
-      </div>
-
-      <div class="project-card">
-        <img src="assets/product-thumbnail.jpg" alt="Product Showcase">
-        <h3>Product Showcase</h3>
-        <p>Simple product grid with filtering and a detail modal.</p>
-        <span class="tags">HTML • CSS • JS</span>
-      </div>
-
-      <div class="project-card">
-        <img src="assets/featured-thumbnail.png" alt="Cleaning Service Landing">
-        <h3>Cleaning Service Landing</h3>
-        <p>Modern and clean design with service highlights and contact section.</p>
-        <span class="tags">HTML • CSS • JS</span>
-      </div>
-
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:shathaziadeh@gmail.com">shathaziadeh@gmail.com</a></p>
-    <p>Phone: <a href="tel:+15046551234">+1 (504) 655-1234</a></p>
-    <div class="contact-buttons">
-      <a href="https://github.com/Shathaziadeh" target="_blank" class="btn">GitHub</a>
-      <a href="https://www.linkedin.com/in/shatha-ziadeh" target="_blank" class="btn secondary">LinkedIn</a>
+  <section class="section alt" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for junior/part-time remote roles.</p>
+      <div class="contact-buttons">
+        <a class="btn primary" href="mailto:Shathaziadeh23@gmail.com">Email Me</a>
+        <a class="btn primary" href="https://github.com/Shathaziadeh" target="_blank">GitHub</a>
+        <a class="btn primary" href="https://www.linkedin.com/in/shathaziadeh/" target="_blank">LinkedIn</a>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Shatha Ziadeh — Built with HTML & CSS</p>
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="y"></span> Shatha Ziadeh — Built with HTML & CSS
+    </div>
   </footer>
 
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
