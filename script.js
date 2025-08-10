@@ -95,5 +95,3 @@ p{margin:.3rem 0 1rem}
 
 /* ===== Footer ===== */
 .site-footer{border-top:1px solid var(--line); padding:26px 0; color:#b9cbf1; text-align:center}
-
-
