@@ -1,49 +1,116 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Product Showcase - Demo</title>
-  <meta name="description" content="Simple product grid with search/filter and a detail modal.">
-  <meta property="og:image" content="assets/thumbnail.png">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Shatha Ziadeh — Web Designer</title>
+  <meta name="description" content="Junior Web Designer portfolio: HTML, CSS, basic JS. Remote-friendly."/>
+  <meta property="og:title" content="Shatha Ziadeh — Web Designer"/>
+  <meta property="og:description" content="Portfolio, skills, and projects."/>
+  <meta property="og:image" content="assets/featured-thumbnail.png"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">Product <span>Showcase</span></div>
-      <input id="search" class="search" placeholder="Search products..." />
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Shatha<span>Ziadeh</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="section">
-    <div class="container">
-      <div class="filters">
-        <button class="chip active" data-cat="all">All</button>
-        <button class="chip" data-cat="accessories">Accessories</button>
-        <button class="chip" data-cat="apparel">Apparel</button>
-        <button class="chip" data-cat="home">Home</button>
-      </div>
-      <div id="grid" class="grid"></div>
-    </div>
-  </section>
-
-  <div id="modal" class="modal" hidden>
-    <div class="modal-content">
-      <button id="close" class="close">×</button>
-      <img id="mimg" alt="" />
-      <div class="mtext">
-        <h3 id="mtitle"></h3>
-        <p id="mdesc"></p>
-        <div id="mprice" class="price"></div>
+<section class="hero">
+  <div class="container hero-grid">
+    <img src="assets/profile.jpg" alt="Profile photo" class="avatar"/>
+    <div>
+      <h1>Hi, I'm <span>Shatha</span></h1>
+      <p class="subtitle">Junior Web Designer</p>
+      <p class="lede">
+        Recent graduate in Computer Information Technology (Web Design). I build clean,
+        responsive websites with HTML, CSS and basic JavaScript.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See Projects</a>
+        <a class="btn" href="#contact">Contact</a>
       </div>
     </div>
   </div>
+</section>
 
-  <footer class="site-footer">
-    <div class="container">Demo by Shatha Ziadeh • <a href="https://github.com/Shathaziadeh">GitHub</a></div>
-  </footer>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I’m passionate about accessible, mobile-first web design and continuously improving my skills.
+    </p>
+    <ul class="bullets">
+      <li><strong>Location:</strong> Harvey, Louisiana, USA</li>
+      <li><strong>Education:</strong> Delgado Community College — Web Design</li>
+      <li><strong>Open to:</strong> Remote junior roles</li>
+    </ul>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section id="skills" class="section alt">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span>HTML5</span><span>CSS3 (Flexbox & Grid)</span><span>JavaScript (DOM)</span>
+      <span>Responsive Design</span><span>Git & GitHub</span><span>WordPress</span>
+      <span>Figma</span><span>Photoshop</span><span>Illustrator</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="cards">
+
+      <article class="card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal site with hero, projects, and contact.</p>
+        <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/" target="_blank" rel="noopener">Live</a>
+      </article>
+
+      <article class="card">
+        <h3>Cafe Landing Page</h3>
+        <p>Mobile-first promo page for a cafe with a menu preview and CTA.</p>
+        <ul class="stack"><li>HTML</li><li>CSS</li></ul>
+        <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/cafe-landing/" target="_blank" rel="noopener">Live</a>
+      </article>
+
+      <article class="card">
+        <h3>Product Showcase</h3>
+        <p>Simple product grid with search, filter, and a detail modal.</p>
+        <ul class="stack"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+        <a class="btn small" href="https://shathaziadeh.github.io/shatha-portfolio/product-showcase/" target="_blank" rel="noopener">Live</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <ul class="contact">
+      <li>Email: <a href="mailto:Shathaziadeh23@gmail.com">Shathaziadeh23@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/Shathaziadeh" target="_blank">Shathaziadeh</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/shathaziadeh" target="_blank">linkedin.com/in/shathaziadeh</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">© 2025 Shatha Ziadeh — Built with HTML & CSS</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
