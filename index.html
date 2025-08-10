@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Shatha Ziadeh — Web Designer</title>
   <meta name="description" content="Portfolio of Shatha Ziadeh — Junior Web Designer. HTML, CSS, basic JS. Remote-ready." />
-  <meta property="og:title" content="Shatha Ziadeh — Web Designer" />
-  <meta property="og:description" content="Junior web designer. Clean, responsive websites with HTML, CSS, and basic JavaScript." />
-  <meta property="og:image" content="assets/featured-thumbnail.png" />
-  <meta name="theme-color" content="#0f172a" />
-
+  <meta property="og:image" content="assets/hero_modern.jpg" />
+  <link rel="preload" as="image" href="assets/hero_modern.jpg">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Home">
+      <a class="brand" href="#">
         <span class="brand-dot" aria-hidden="true"></span>
         Shatha<span>Ziadeh</span>
       </a>
@@ -35,35 +32,46 @@
     </div>
   </header>
 
-  <!-- Hero (بدون صور كبيرة) -->
-  <main id="top" class="hero">
+  <!-- Hero -->
+  <section class="hero" id="top">
     <div class="container hero-grid">
       <div class="hero-text">
         <p class="eyebrow">Junior Web Designer</p>
         <h1>Hi, I’m <span class="accent">Shatha</span></h1>
         <p class="lead">
-          I build clean, responsive websites with <strong>HTML</strong>, <strong>CSS</strong>, and basic <strong>JavaScript</strong>.
+          Recent graduate in Computer Information Technology (Web Design).
+          I build clean, responsive websites with <strong>HTML</strong>, <strong>CSS</strong>, and
+          basic <strong>JavaScript</strong>.
         </p>
         <div class="actions">
           <a class="btn primary" href="#projects">See Projects</a>
           <a class="btn ghost" href="#contact">Contact</a>
         </div>
       </div>
+
+      <figure class="hero-media">
+        <img src="assets/hero_modern.jpg" alt="Clean abstract background" />
+      </figure>
     </div>
-  </main>
+  </section>
 
   <!-- About -->
   <section class="section" id="about">
-    <div class="container narrow">
-      <h2>About</h2>
-      <p>
-        I’m passionate about accessible, mobile-first web design and continuously improving my skills.
-        Based in <strong>Harvey, Louisiana</strong> — open to <strong>remote junior roles</strong>.
-      </p>
-      <ul class="bullets">
-        <li><strong>Education:</strong> Delgado Community College — Web Design</li>
-        <li><strong>Focus:</strong> Semantic HTML, modern CSS (Flexbox & Grid), simple JS interactions</li>
-      </ul>
+    <div class="container two-col">
+      <div>
+        <h2>About</h2>
+        <p>
+          I’m passionate about accessible, mobile-first web design and continuously improving my skills.
+          Based in <strong>Harvey, Louisiana</strong>, open to <strong>remote junior roles</strong>.
+        </p>
+        <ul class="bullets">
+          <li><strong>Education:</strong> Delgado Community College — Web Design</li>
+          <li><strong>Focus:</strong> Semantic HTML, modern CSS (Flexbox & Grid), simple JS interactions</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/featured-thumbnail.png" alt="Minimal workspace" class="rounded" />
+      </figure>
     </div>
   </section>
 
@@ -87,7 +95,7 @@
       <div class="cards">
         <!-- Portfolio -->
         <article class="card">
-          <img src="assets/portfolio-thumbnail.jpg" alt="Portfolio Website thumbnail" loading="lazy" />
+          <img src="assets/portfolio-thumbnail.jpg" alt="Portfolio Website" loading="lazy" />
           <div class="card-body">
             <h3>Portfolio Website</h3>
             <p>Responsive personal site with hero, projects, and contact.</p>
@@ -101,7 +109,7 @@
 
         <!-- Cafe Landing -->
         <article class="card">
-          <img src="assets/cafe-thumbnail.png" alt="Cafe Landing Page thumbnail" loading="lazy" />
+          <img src="assets/cafe-thumbnail.png" alt="Cafe Landing Page" loading="lazy" />
           <div class="card-body">
             <h3>Cafe Landing Page</h3>
             <p>Mobile-first promo page for a cafe with menu preview and CTA.</p>
@@ -115,7 +123,7 @@
 
         <!-- Product Showcase -->
         <article class="card">
-          <img src="assets/product-thumbnail.jpg" alt="Product Showcase thumbnail" loading="lazy" />
+          <img src="assets/product-thumbnail.jpg" alt="Product Showcase" loading="lazy" />
           <div class="card-body">
             <h3>Product Showcase</h3>
             <p>Simple product grid with filtering and a detail modal.</p>
@@ -127,12 +135,12 @@
           </div>
         </article>
 
-        <!-- Cleaning Service (يستخدم hero_modern.jpg) -->
+        <!-- Cleaning Service -->
         <article class="card">
-          <img src="assets/hero_modern.jpg" alt="Cleaning Service Landing thumbnail" loading="lazy" />
+          <img src="assets/featured-thumbnail.png" alt="Cleaning Service Landing" loading="lazy" />
           <div class="card-body">
             <h3>Cleaning Service Landing</h3>
-            <p>Modern and clean design with service highlights and contact section.</p>
+            <p>Modern, clean layout with services, pricing, and contact CTA.</p>
             <ul class="stack"><li>HTML</li><li>CSS</li><li>JS</li></ul>
             <div class="card-actions">
               <a class="btn small" href="./crystal_clean_modern/" target="_blank" rel="noopener">Live</a>
@@ -144,23 +152,29 @@
     </div>
   </section>
 
-  <!-- Contact (أزرار فقط) -->
+  <!-- Contact -->
   <section class="section alt" id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Feel free to reach out for junior/part-time remote roles.</p>
-
-      <div class="cta-row">
-        <a class="btn primary big" href="mailto:Shathaziadeh23@gmail.com">Email Me</a>
-        <a class="btn ghost big" target="_blank" rel="noopener" href="https://github.com/Shathaziadeh">GitHub</a>
-        <a class="btn ghost big" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shathaziadeh/">LinkedIn</a>
-        <a class="btn ghost big" href="tel:+15045551234">Call</a>
+    <div class="container two-col">
+      <div>
+        <h2>Contact</h2>
+        <p>Feel free to reach out for junior/part-time remote roles.</p>
+        <div class="contact-buttons">
+          <a class="btn primary" href="mailto:Shathaziadeh23@gmail.com">Email Me</a>
+          <a class="btn ghost" href="https://github.com/Shathaziadeh" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/shathaziadeh/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="tel:+15045551234">Call Me</a>
+        </div>
       </div>
+      <figure>
+        <img src="assets/hero_modern.jpg" alt="Clean gradient" class="rounded" />
+      </figure>
     </div>
   </section>
 
   <footer class="site-footer">
-    <div class="container">© <span id="y"></span> Shatha Ziadeh — Built with HTML &amp; CSS</div>
+    <div class="container">
+      © <span id="y"></span> Shatha Ziadeh — Built with HTML & CSS
+    </div>
   </footer>
 
   <script src="script.js"></script>
