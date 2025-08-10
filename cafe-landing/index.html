@@ -3,56 +3,59 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cafe Azahar - Landing</title>
-  <meta name="description" content="Mobile-first landing page demo.">
-  <meta property="og:image" content="assets/thumbnail.png">
+  <title>Cafe Azahar — Landing</title>
+  <meta name="description" content="Mobile-first promo page for a cafe with menu preview and CTA." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="nav">
     <div class="container">
       <div class="brand">Cafe <span>Azahar</span></div>
-      <nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav>
+      <a class="btn" href="#order">Order Now</a>
     </div>
   </header>
+
   <section class="hero">
     <div class="container hero-grid">
-      <div>
+      <div class="hero-text">
         <h1>Fresh coffee. Cozy vibes.</h1>
-        <p class="lead">Hand-brewed coffee, fresh pastries, and a calm corner to read, meet, or work.</p>
-        <a class="btn primary" href="#visit">Reserve a table</a>
+        <p>Specialty beans, fresh pastries, and a calm corner to get things done.</p>
+        <a class="btn primary" href="#menu">View Menu</a>
       </div>
-      <div class="card promo">
-        <h3>Today’s Special</h3>
-        <p>Cardamom Latte + Almond Croissant</p>
-        <div class="price">$7.50</div>
+      <div class="hero-card">
+        <img src="assets/thumbnail.png" alt="Coffee cup" />
       </div>
     </div>
   </section>
+
   <section id="menu" class="section">
     <div class="container">
-      <h2>Menu Highlights</h2>
-      <div class="grid3">
-        <div class="menu-item"><h4>Espresso</h4><p>Rich and bold shot.</p><div class="price">$2.50</div></div>
-        <div class="menu-item"><h4>Latte</h4><p>Silky and smooth milk.</p><div class="price">$4.00</div></div>
-        <div class="menu-item"><h4>Cold Brew</h4><p>Slow-steeped, low-acid.</p><div class="price">$4.50</div></div>
+      <h2>Popular Picks</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Latte</h3>
+          <p>Silky espresso + microfoam.</p>
+          <span class="price">$4.50</span>
+        </article>
+        <article class="card">
+          <h3>Cold Brew</h3>
+          <p>12-hour steep, low acidity.</p>
+          <span class="price">$4.00</span>
+        </article>
+        <article class="card">
+          <h3>Cardamom Cake</h3>
+          <p>Moist, spiced, not too sweet.</p>
+          <span class="price">$3.75</span>
+        </article>
+      </div>
+      <div class="cta">
+        <a id="order" class="btn primary" href="#">Call to Order</a>
       </div>
     </div>
   </section>
-  <section id="about" class="section alt">
-    <div class="container"><h2>About</h2><p>Independent cafe demo page coded as a practice project.</p></div>
-  </section>
-  <section id="visit" class="section">
-    <div class="container">
-      <h2>Visit</h2>
-      <form class="reserve" onsubmit="event.preventDefault(); alert('Thanks! We will confirm by email.');">
-        <label>Name<input required type="text" placeholder="Your name"></label>
-        <label>Email<input required type="email" placeholder="name@example.com"></label>
-        <label>Date<input required type="date"></label>
-        <button class="btn primary" type="submit">Request Reservation</button>
-      </form>
-    </div>
-  </section>
-  <footer class="site-footer"><div class="container">© 2025 Cafe Azahar — Demo</div></footer>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Cafe Azahar</div>
+  </footer>
 </body>
 </html>
